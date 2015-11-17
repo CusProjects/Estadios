@@ -15,4 +15,12 @@ public class EstadiosController {
         return estadios;
     }
 
+    public static Estadio getEstadio(int id){
+        for(Estadio estadio: estadios){
+            if(estadio.getId() == id){
+                return estadio;
+            }
+        }
+        return null;
+    }
 }

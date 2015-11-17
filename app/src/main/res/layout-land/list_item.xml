@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="wrap_content">
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
     <android.support.v7.widget.CardView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -17,9 +19,19 @@
             android:padding="16dp"
             android:focusableInTouchMode="false">
 
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ivEstadio"
+                android:src="@drawable/stadiumsport_estadio_4328"
+                android:background="@color/colorPrimaryDark"
+                />
+
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivEstadio"
+                android:layout_marginLeft="5dp"
                 >
 
                 <TextView
@@ -90,4 +102,5 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
 </RelativeLayout>
